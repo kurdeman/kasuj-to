@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XD</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Podaj rok (daj minus jeśli chcesz rok przed naszą erą"))
+
+        let wiek;
+
+        let wiekText;
+
+        if (a > 0){
+            wiek = (a-a%100) / 100;
+            
+            if (a%100>0);
+            wiek = wiek + 1;
+            
+            switch(wiek){
+                case 1: wiekText = "I"; break;
+                case 2: wiekText = "II"; break;
+                case 3: wiekText = "III"; break;
+                case 4: wiekText = "IV"; break;
+                case 5: wiekText = "V"; break;
+                case 6: wiekText = "VI"; break;
+                case 7: wiekText = "VII"; break;
+                case 8: wiekText = "VIII"; break;
+                case 9: wiekText = "IX"; break;
+                case 10: wiekText = "X"; break;
+                case 11: wiekText = "XI"; break;
+                case 12: wiekText = "XII"; break;
+                case 13: wiekText = "XIII"; break;
+                case 14: wiekText = "XIV"; break;
+                case 15: wiekText = "XV"; break;
+                case 16: wiekText = "XVI"; break;
+                case 17: wiekText = "XVII"; break;
+                case 18: wiekText = "XVIII";break;
+                case 19: wiekText = "XIX"; break;
+                case 20: wiekText = "XX"; break;
+                case 21: wiekText = "XXI"; break;
+                default: wiekText = "Wywaliło poza skalę";
+            }
+            document.write("Rok " + a + " to wiek " + wiekText + " n.e")
+        }
+        else if (a < 0){
+            a = -a;
+            wiek = (a-a%100) / 100;
+            
+            if (a%100>0);
+            wiek = wiek + 1;
+            
+            switch(wiek){
+                case 1: wiekText = "I"; break;
+                case 2: wiekText = "II"; break;
+                case 3: wiekText = "III"; break;
+                case 4: wiekText = "IV"; break;
+                case 5: wiekText = "V"; break;
+                case 6: wiekText = "VI"; break;
+                case 7: wiekText = "VII"; break;
+                case 8: wiekText = "VIII"; break;
+                case 9: wiekText = "IX"; break;
+                case 10: wiekText = "X"; break;
+                case 11: wiekText = "XI"; break;
+                case 12: wiekText = "XII"; break;
+                case 13: wiekText = "XIII"; break;
+                case 14: wiekText = "XIV"; break;
+                case 15: wiekText = "XV"; break;
+                case 16: wiekText = "XVI"; break;
+                case 17: wiekText = "XVII"; break;
+                case 18: wiekText = "XVIII"; break;
+                case 19: wiekText = "XIX"; break;
+                case 20: wiekText = "XX"; break;
+                case 21: wiekText = "XXI"; break;
+                default: wiekText = "Wywaliło poza skalę";
+            }
+            document.write("Rok " + a + " p.n.e to wiek " + wiekText + " p.n.e")
+        }
+        else
+        document.write("Rok 0 nie istnieje")
+    </script>
+</body>
+</html>
